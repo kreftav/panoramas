@@ -7,31 +7,48 @@
 <style> @-ms-viewport { width: device-width; } </style>
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
+<style>
+  .scene-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  .scene-thumbnails .scene {
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .scene-thumbnails .scene img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+</style>
 </head>
 <body class="multiple-scenes ">
 
 <div id="pano"></div>
 
 <div id="sceneList">
-  <ul class="scenes">
-    
-      <a href="javascript:void(0)" class="scene" data-id="0-giro-mdia---centro-claro-fb">
-        <li class="text">GIRO MÍDIA - CENTRO CLARO FB</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-giro-mdia---beltro-noite">
-        <li class="text">GIRO MÍDIA - BELTRÃO NOITE</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-giro-mdia---onda-sul">
-        <li class="text">GIRO MÍDIA - ONDA SUL</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="3-giro-mdia----centro-fb">
-        <li class="text">GIRO MÍDIA -  CENTRO FB</li>
-      </a>
-    
-  </ul>
+  <div class="scene-thumbnails">
+    <div class="scene" data-id="0-giro-mdia---centro-claro-fb">
+      <img src="thumbs/centro-claro.png" alt="Centro Claro FB">
+      <p>Centro Claro FB</p>
+    </div>
+    <div class="scene" data-id="1-giro-mdia---beltro-noite">
+      <img src="thumbs/beltro-noite.png" alt="Beltrão Noite">
+      <p>Beltrão Noite</p>
+    </div>
+    <div class="scene" data-id="2-giro-mdia---onda-sul">
+      <img src="thumbs/onda-sul.png" alt="Onda Sul">
+      <p>Onda Sul</p>
+    </div>
+    <div class="scene" data-id="3-giro-mdia----centro-fb">
+      <img src="thumbs/centro-fb.png" alt="Centro FB">
+      <p>Centro FB</p>
+    </div>
+  </div>
 </div>
 
 <div id="titleBar">
